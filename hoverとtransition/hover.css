@@ -9,6 +9,10 @@
   flex-basis: 300px;
 }
 
+h2,p{
+  text-align: center;
+}
+
 .thema {
   display: inline-block;
   border-bottom: 2px solid rgba(45, 136, 210, 0.5);
@@ -17,6 +21,7 @@
 
 .answer {
   margin-bottom: 100px;
+  text-align: center;
 }
 .answer .btn {
   position: relative;
