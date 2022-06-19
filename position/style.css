@@ -1,0 +1,36 @@
+.Position__basic {
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .Position__basic__caption {
+     width: 35%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+   }
+   .Position__basic__img {
+     width: 100%;
+   }
+   .Position__basic__img img {
+     width: 100%;
+   }
+   .Position__basic__name {
+     color: #fff;
+     padding: 0px 5px;
+   }
+   .Position__basic__name1 {
+     position: absolute;
+     top: 30%;
+     left: 60%;
+     background-color: #50d8ab;
+   }
+   .Position__basic__name2 {
+     position: absolute;
+     top: 50%;
+     left: 70%;
+     background-color: #203069;
+   }
