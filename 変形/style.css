@@ -5,7 +5,6 @@ html {
 }
 body {
   font-family: 'Heebo', sans-serif;
-  letter-spacing: 0.2em;
 }
 img {
   max-width: 100%;
@@ -42,6 +41,7 @@ positionとrightで画像の上に重ねる
 .content .left .title {
   line-height: 1;
   margin-bottom: 56px;
+  letter-spacing: 0.2rem;
 }
 /*
 「display: block;」を設定することで、
@@ -77,49 +77,13 @@ positionとrightで画像の上に重ねる
   object-fit: cover;
 }
 
-/*-------------------------------------------
-SP
--------------------------------------------*/
-@media screen and (max-width: 900px) {
-  /*
-  PC表示の時だけ表示させたい要素に設定しておくことで、
-  スマホ表示は非表示になる。
-  デモサイトでは、タイトル下のテキストのbrタグに設定することで、
-  PC表示の時だけbrタグが有効になりテキストが改行される。
-  */
-  .pc {
-    display: none;
-  }
-  .content {
-    flex-direction: column;
-  }
-  .content .left {
-    width: 100%;
-    padding: 0 16px;
-    margin-bottom: 20px;
-  }
-  /*
-  「content: none;」を設定することで疑似要素が非表示になるので、
-  画像に重ねていた四角いボックスが消える。
-  */
-  .content .left::before {
-    content: none;
-  }
-  .content .left .title .en {
-    font-size: 2.25rem;
-  }
-  /*
-  「position: static;」で absolute を解除する
-  */
-  .content .left .text-area {
-    position: static;
-  }
-  .content .right {
-    width: 100%;
-  }
+.logo{
+     width: 30%;
+     margin-top: 120px;
+     transform-origin: left;
+     transition: all .5s;
 }
 
-.keyVisual{
-     background-image: url(../img/柄悪マーケ.JPG);
-     background-size: cover;
+.logo:hover{
+     transform:   rotate(-30deg) scale(1.2);
 }
